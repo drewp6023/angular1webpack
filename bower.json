@@ -1,0 +1,20 @@
+{  
+   "name":"angular1webpack",
+   "description":"Practicing Angular 1.x and Webpack",
+   "main":"index.js",
+   "authors":[  
+      "Drew"
+   ],
+   "license":"ISC",
+   "moduleType":[  
+
+   ],
+   "homepage":"",
+   "ignore":[  
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+   ]
+}
