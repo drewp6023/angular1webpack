@@ -14,7 +14,7 @@ angular.module('core', [
 	$stateProvider
 		.state('/', {
 			url: '/',
-			templateUrl: '../app/modules/home/home.html',
+			templateUrl: '/app/modules/home/home.html',
 			controller: 'HomeController'
 		});
 });

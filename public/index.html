@@ -3,25 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <title>Webpack & Angular</title>
+
+        <link rel="stylesheet" type="text/css" href="/app/assets/css/custom.css">
+
         <!-- bower:css -->
-        <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <!-- endbower -->        
     </head>
     <body>
-        <div ng-app="core" ng-controller="MainController">
+        <div id="main-container" ng-app="core" ng-controller="MainController">
             <div ui-view></div>
         </div>
-        <script src="../build/bundle.js"></script>  
+        <script src="/build/bundle.js"></script>  
 
         <!-- bower:js -->
-        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- endbower -->
 
         <!-- angular -->
-        <script type="text/javascript" src="../app/modules/home/HomeController.js"></script>
+        <script type="text/javascript" src="/app/modules/home/HomeController.js"></script>
         <!-- endangular -->
 
-        <script type="text/javascript" src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="/node_modules/underscore/underscore-min.js"></script>
     </body>
 </html>

@@ -5,7 +5,9 @@ var BUILD_DIR = path.resolve(__dirname, './build');
 var APP_DIR = path.resolve(__dirname, './app');
 
 module.exports = {
-    entry: './app/app.js',
+    entry: {
+        app: ['./app/app.js']
+    },
     output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
@@ -21,7 +23,7 @@ module.exports = {
                 presets: ['es2015']
             }
           },
-          { test: /\.css$/, loader: "style-loader!css-loader" },
+          { test: /\.css$/, loader: "style-loader!css-loader" }
           // { test: /\.jsx?$/, loader: "strip-loader?strip[]=console.log" }, // This loader strips code out - use for production build
         ]
     },
