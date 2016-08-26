@@ -6,14 +6,20 @@ angular.module('core', [
 ])
 
 .constant('FIREBASE_CONFIG', {
-	apiKey: "XFsfRr6M5hRQRGoavo6OUyWTXGPGU7ZzMeo3ktWY",
-	authDomain: "393369737235.firebaseapp.com",
+	apiKey: "AIzaSyAxLArXHeV6Zgl5gbo3IjVeQ5WEdKJ5LMc",
+	authDomain: "blazing-dtp.firebaseapp.com",
 	databaseURL: "https://blazing-dtp.firebaseio.com",
-	storageBucket: "blazing-dtp.appspot.com"
+	storageBucket: "blazing-dtp.appspot.com",
 })
 
 .controller('MainController', ['$rootScope', '$scope', 'FIREBASE_CONFIG', function ($rootScope, $scope, FIREBASE_CONFIG) {
 	firebase.initializeApp(FIREBASE_CONFIG);
+}])
+
+.factory('fireRef', ['$firebaseObject', function ($firebaseObject) {
+	var ref = firebase.database().ref();
+
+	return $firebaseObject(ref);
 }])
 
 .config(function ($stateProvider, $urlRouterProvider) {
