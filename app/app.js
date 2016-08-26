@@ -16,12 +16,6 @@ angular.module('core', [
 	firebase.initializeApp(FIREBASE_CONFIG);
 }])
 
-.factory('fireRef', ['$firebaseObject', function ($firebaseObject) {
-	var ref = firebase.database().ref();
-
-	return $firebaseObject(ref);
-}])
-
 .config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/");
 
