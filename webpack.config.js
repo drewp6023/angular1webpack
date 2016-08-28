@@ -23,6 +23,7 @@ module.exports = {
                 presets: ['es2015']
             }
           },
+          { test: /\.scss$/, loaders: ["style", "css", "sass"] },          
           { test: /\.css$/, loader: "style-loader!css-loader" }
           // { test: /\.jsx?$/, loader: "strip-loader?strip[]=console.log" }, // This loader strips code out - use for production build
         ]
