@@ -1,7 +1,29 @@
+/* IMPORTS */
 @import "bourbon";
 
-#usersWrapper {
-	h3 {
-		color: blue;
-	}
+/* VARIABLES */
+$blue-gradient-1: #268BD2;
+$purple-gradient-1: #7229d1;
+
+
+/* STYLES */
+body {
+	@include linear-gradient($blue-gradient-1, $purple-gradient-1);
+	background-repeat: no-repeat;
+	height: 50vw;
+}
+.container {
+	width: 90%;
+	background-color: white;
+	height: 50vw;
+	padding-top: 15px;
+}
+.jumbotron {
+	font-family: $georgia;
+}
+#main-wrapper {
+
+}
+#users-wrapper {
+
 }
