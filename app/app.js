@@ -1,6 +1,6 @@
 var angular = require('angular');
 // returns compiled css code from file.scss, resolves Sass and CSS imports and url(...)s
- require("!style!css!sass!../app/assets/css/custom.scss");
+require("!style!css!sass!../app/assets/css/custom.scss");
 
 angular.module('core', [
 	'ui.router',

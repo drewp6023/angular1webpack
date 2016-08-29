@@ -1,5 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
+var bourbon = require('node-bourbon').includePaths;
+
+console.log(bourbon);
 
 var BUILD_DIR = path.resolve(__dirname, './build');
 var APP_DIR = path.resolve(__dirname, './app');
@@ -23,9 +26,15 @@ module.exports = {
                 presets: ['es2015']
             }
           },
-          { test: /\.scss$/, loaders: ["style", "css", "sass"] },          
+          { test: /\.scss$/, loaders: 'style!css!sass' },          
           { test: /\.css$/, loader: "style-loader!css-loader" }
           // { test: /\.jsx?$/, loader: "strip-loader?strip[]=console.log" }, // This loader strips code out - use for production build
         ]
     },
+    sassLoader: {
+      includePaths: [
+        path.resolve(__dirname, "./app/assets/css"),
+        bourbon
+      ]
+    }
 };
