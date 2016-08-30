@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <title>Webpack & Angular</title>
 
-        <link rel="stylesheet" type="text/css" href="/app/assets/css/custom.css">
-
         <!-- bower:css -->
         <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <!-- endbower -->        
@@ -15,7 +13,7 @@
         <!-- endfontawesome -->
     </head>
     <body>
-        <div id="main-container" ng-app="core" ng-controller="MainController" class="container">
+        <div ng-app="core" ng-controller="MainController">
             <div ui-view></div>
         </div>
         <script src="/build/bundle.js"></script>  

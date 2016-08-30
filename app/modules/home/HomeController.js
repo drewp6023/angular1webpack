@@ -8,12 +8,6 @@
     	usersRef.$loaded(function () {
     		$scope.users = usersRef;
     	});
-
-    	$scope.deleteUser = function (user) {
-    		UtilityService.confirm("Are you sure you want to delete this user?", function () {
-    			$scope.users.$remove(user);
-    		});
-    	}
     }];
  
     app.controller("HomeController", HomeController);
